@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.xenotoad.nintrack.iml" filepath="$PROJECT_DIR$/.idea/modules/net.xenotoad.nintrack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/net.xenotoad.nintrack.main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/net.xenotoad.nintrack.main.iml" group="net.xenotoad.nintrack.main" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.xenotoad.nintrack_main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.xenotoad.nintrack_main.iml" group="net.xenotoad.nintrack" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.xenotoad.nintrack_test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.xenotoad.nintrack_test.iml" group="net.xenotoad.nintrack" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <Label text="Export progress:" BorderPane.alignment="TOP_LEFT">
+            <BorderPane.margin>
+                <Insets bottom="10.0" />
+            </BorderPane.margin>
+        </Label>
+    </top>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <bottom>
+        <Button fx:id="closeButton" mnemonicParsing="false" text="Close" BorderPane.alignment="BOTTOM_RIGHT">
+            <BorderPane.margin>
+                <Insets top="10.0" />
+            </BorderPane.margin>
+        </Button>
+    </bottom>
+    <center>
+        <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="pathColumn" editable="false" prefWidth="257.0" text="Path" />
+                <TableColumn fx:id="progressColumn" editable="false" prefWidth="309.0" text="Progress" />
+                <TableColumn fx:id="statusColumn" editable="false" prefWidth="309.0" text="Status" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

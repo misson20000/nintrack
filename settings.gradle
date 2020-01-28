@@ -1,0 +1,5 @@
+rootProject.name = 'net.xenotoad.nintrack'
+include 'main'
+findProject(':main')?.name = 'net.xenotoad.nintrack.main'
+rootProject.name = 'net.xenotoad.nintrack'
+

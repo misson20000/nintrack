@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <items>
+                <Button fx:id="importButton" mnemonicParsing="false" text="Import..." />
+                <Button fx:id="exportButton" mnemonicParsing="false" text="Export..." />
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <BorderPane BorderPane.alignment="CENTER">
+            <center>
+                <TreeTableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TreeTableColumn fx:id="tableColumnExtract" prefWidth="75.0" text="Extract" />
+                        <TreeTableColumn fx:id="tableColumnName" prefWidth="170.0" text="Name" />
+                        <TreeTableColumn fx:id="tableColumnType" prefWidth="102.0" text="Type" />
+                        <TreeTableColumn fx:id="tableColumnProgress" prefWidth="169.0" text="Progress" />
+                        <TreeTableColumn fx:id="tableColumnSize" prefWidth="102.0" text="Size" />
+                        <TreeTableColumn fx:id="tableColumnStatus" prefWidth="102.0" text="Status" />
+                    </columns>
+                </TreeTableView>
+            </center>
+            <bottom>
+                <ProgressBar fx:id="overallProgressBar" maxWidth="1.7976931348623157E308" prefWidth="200.0" progress="0.0" BorderPane.alignment="CENTER" />
+            </bottom>
+        </BorderPane>
+    </center>
+    <left>
+        <BorderPane BorderPane.alignment="CENTER">
+            <bottom>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                      <Button fx:id="extractButton" mnemonicParsing="false" text="Extract" />
+                  <BorderPane>
+                     <center>
+                        <CheckBox fx:id="immediateCheckbox" selected="true" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Immediate" />
+                     </center>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </BorderPane.margin>
+            </HBox>
+            </bottom>
+            <padding>
+                <Insets bottom="10.0" />
+            </padding>
+            <center>
+                <VBox prefHeight="200.0" BorderPane.alignment="CENTER" fx:id="formatCheckboxesContainer">
+                    <children>
+                        <CheckBox fx:id="formatGcn" mnemonicParsing="false" selected="true" text="GameCube (.iso)" />
+                        <CheckBox fx:id="formatWii" mnemonicParsing="false" selected="true" text="Wii (.iso)" />
+                        <CheckBox fx:id="formatWiiPartition" mnemonicParsing="false" selected="true" text="Wii Partition" />
+                        <CheckBox fx:id="formatLz77Type11" mnemonicParsing="false" selected="true" text="LZ77 Type 11 (.LZ)" />
+                        <CheckBox fx:id="formatU8" mnemonicParsing="false" selected="true" text="U8 Archive (.arc)" />
+                        <CheckBox fx:id="formatYaz0" mnemonicParsing="false" selected="true" text="Yaz0" />
+                        <CheckBox fx:id="formatRarc" mnemonicParsing="false" selected="true" text="RARC Archive (.RARC)" />
+                        <CheckBox fx:id="formatBrres" mnemonicParsing="false" selected="true" text="BRRES Archive (.brres)" />
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </VBox>
+            </center>
+        </BorderPane>
+    </left>
+</BorderPane>
